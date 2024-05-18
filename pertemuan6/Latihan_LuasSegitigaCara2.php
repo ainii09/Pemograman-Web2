@@ -27,15 +27,17 @@
         }
         label {
             font-weight: bold;
-            display: block;
-            margin-bottom: 3px;
+            display: inline-block;
+            margin-bottom: 10px;
+             width: 60%;
+            
         }
         input[type="number"] {
-            width: 100%;
+            width: 35%;
             padding: 6px; 
             border-radius: 5px;
             border: 1px solid #ccc;
-            margin-bottom: 7px; 
+            margin-bottom: 5px; 
             box-sizing: border-box;
         }
         input[type="submit"],
@@ -70,11 +72,11 @@
             <?php
             $jumlah_input = 6;
             for ($i = 1; $i < $jumlah_input; $i++) {
-                echo "<label for='alas{$i}'>Alas Segitiga {$i}:</label>";
+                echo "<label for='alas{$i}'>Alas Segitiga {$i}</label>";
                 echo "<input type='number' name='alas{$i}' id='alas{$i}' required>";
                 echo "<br>";
 
-                echo "<label for='tinggi{$i}'>Tinggi Segitiga {$i}:</label>";
+                echo "<label for='tinggi{$i}'>Tinggi Segitiga {$i}</label>";
                 echo "<input type='number' name='tinggi{$i}' id='tinggi{$i}' required>";
                 echo "<br><br>";
             }
